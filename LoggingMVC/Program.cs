@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,7 +14,13 @@ namespace LoggingMVC
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var host = CreateHostBuilder(args).Build();
+
+            // obtendo o serviço do ILogger
+            var logger = host.Services.GetRequiredService<ILogger<Program>>();
+            logger.LogInformation("Aplicação iniciada");
+            //CreateHostBuilder(args).Build().Run();
+            host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
