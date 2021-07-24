@@ -20,9 +20,14 @@ namespace LoggingMVC.Controllers
 
         public IActionResult Index()
         {
-            _logger.LogInformation("Logando uma informação");
-            _logger.LogDebug("Logando o Debug");
+            // nivéis de log
+            _logger.LogTrace("logs trace");
+            _logger.LogDebug("logs debug");
+            _logger.LogInformation("logs information");
             _logger.LogWarning("Logando warning");
+            _logger.LogError("logs error");
+            _logger.LogCritical("logs critical");
+
             return View();
         }
 

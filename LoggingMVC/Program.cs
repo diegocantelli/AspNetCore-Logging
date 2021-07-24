@@ -22,7 +22,10 @@ namespace LoggingMVC
                 .ConfigureLogging((context, logging) => 
                 {
                     logging.ClearProviders();
+                    // context.Configuration.GetSection("Logging")´-> irá buscar as informações contidas no appsettings.json
                     logging.AddConfiguration(context.Configuration.GetSection("Logging"));
+                    logging.AddDebug();
+                    logging.AddConsole();
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
