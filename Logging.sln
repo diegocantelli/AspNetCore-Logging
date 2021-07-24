@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Logging\Logging.csproj", "{EC3A2A34-57A8-4F2D-A1A7-F94240EBC9E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingMVC", "LoggingMVC\LoggingMVC.csproj", "{74FD47B9-4078-4FCC-B615-274F6B327DCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC3A2A34-57A8-4F2D-A1A7-F94240EBC9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3A2A34-57A8-4F2D-A1A7-F94240EBC9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3A2A34-57A8-4F2D-A1A7-F94240EBC9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3A2A34-57A8-4F2D-A1A7-F94240EBC9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FD47B9-4078-4FCC-B615-274F6B327DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FD47B9-4078-4FCC-B615-274F6B327DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FD47B9-4078-4FCC-B615-274F6B327DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FD47B9-4078-4FCC-B615-274F6B327DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3833A3B-344B-4E2E-B2B6-C50749E53B5C}
+	EndGlobalSection
+EndGlobal
