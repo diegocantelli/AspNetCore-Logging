@@ -11,12 +11,16 @@ namespace LoggingMVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ILogger _logger;
+        public HomeController(ILoggerFactory logger)
         {
-            _logger = logger;
+            _logger = logger.CreateLogger("HomeController");
         }
+
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
 
         public IActionResult Index()
         {
